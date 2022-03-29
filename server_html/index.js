@@ -12,8 +12,13 @@ app.use(
     })
 );
 
-app.get('/', (req,res)=>{
+app.get('/home', (req,res)=>{
     res.render('home')
+});
+
+app.get("/images/:images", (req,res) =>{
+    let image= req.params.images;
+    res.sendFile(`/server_html/public/images/${image}.png`)
 });
 
 app.listen(app.get("port"), ()=>{
