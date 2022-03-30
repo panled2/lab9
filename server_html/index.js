@@ -17,7 +17,7 @@ app.get('/home', (req,res)=>{
 });
 
 app.get("/home", homeController.initialReq);
-app.get("/images/:imagenum", homeController.paramImage);
+app.get("/images/:imageNumber", homeController.paramImage);
 
 app.listen(app.get("port"), ()=>{
     console.log(`Server running at http://localhost:${app.get("port")}`);
