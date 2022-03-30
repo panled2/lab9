@@ -14,12 +14,12 @@ exports.paramImage = (req,res) => {
         res.render("image3")
     }
     if (imagenum == 4) {
-        res.render("image3")
+        res.render("image4")
     }
     if (imagenum == 5) {
-        res.render("image3")
+        res.render("image5")
     }
     if (imagenum == 6) {
-        res.render("image3")
+        res.render("image6")
     }
 };
