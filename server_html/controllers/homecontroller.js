@@ -1,5 +1,5 @@
 exports.initialReq = (req,res) => {
-    res.render("index");
+    res.render("home");
 };
 
 exports.paramImage = (req,res) => {
